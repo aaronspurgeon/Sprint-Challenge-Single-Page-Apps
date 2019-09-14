@@ -16,15 +16,20 @@ import WelcomePage from './WelcomePage';
 // https://react.semantic-ui.com/elements/button/
 // https://react.semantic-ui.com/collections/breadcrumb/
 
-
+    
     const panes = [
-        { menuItem: 'Home Page', render: () => <Tab.Pane><NavLink exact to='/' /></Tab.Pane>},
-        { menuItem: 'Characters', render: () => <Tab.Pane><NavLink to='/characters' /></Tab.Pane>},
-        { menuItem: 'Locations', render: () => <Tab.Pane><LocationsList /></Tab.Pane>},
-        { menuItem: 'Episodes', render: () => <Tab.Pane><EpisodesList /></Tab.Pane>}
+        { menuItem: 'Home Page', render: () => <Tab.Pane to={'/'} as={NavLink}></Tab.Pane>},
+        { menuItem: 'Characters', render: () => <Tab.Pane to={'/characters'} as={NavLink}></Tab.Pane>},
+        { menuItem: 'Locations', render: () => <Tab.Pane to={'/locations'} as={NavLink}></Tab.Pane>},
+        { menuItem: 'Episodes', render: () => <Tab.Pane to={'/episodes'} as={NavLink}></Tab.Pane>}
     ]
 
-    const TabNav = () => <Tab panes={panes} />
+    const TabNav = () => {
+        return <Tab panes={panes} />     
+        
+}
 
     export default TabNav;
+
+    
    
