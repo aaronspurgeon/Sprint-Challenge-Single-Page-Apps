@@ -3,14 +3,16 @@ import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import CharacterList from './components/CharacterList';
 import LocationList from './components/LocationsList';
+import EpisodesList from './components/EpisodesList';
 
 
 export default function App() {
   return (
     <main>
       <Header />
-      <CharacterList />
+      {/* <CharacterList /> */}
       {/* <LocationList /> */}
+      <EpisodesList />
       {/* <TabNav /> */}
     </main>
   );
