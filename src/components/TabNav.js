@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 import CharacterList from './CharacterList';
 import LocationsList from './LocationsList';
 import EpisodesList from './EpisodesList';
-import Home from './Home';
+import WelcomePage from './WelcomePage';
+
+
 
 // TODO: Add missing menu/tabs/nav below
 
@@ -16,8 +18,8 @@ import Home from './Home';
 
 
     const panes = [
-        { menuItem: 'Home Page', render: () => <Tab.Pane><Home /></Tab.Pane>},
-        { menuItem: 'Characters', render: () => <Tab.Pane><CharacterList /></Tab.Pane>},
+        { menuItem: 'Home Page', render: () => <Tab.Pane><NavLink exact to='/' /></Tab.Pane>},
+        { menuItem: 'Characters', render: () => <Tab.Pane><NavLink to='/characters' /></Tab.Pane>},
         { menuItem: 'Locations', render: () => <Tab.Pane><LocationsList /></Tab.Pane>},
         { menuItem: 'Episodes', render: () => <Tab.Pane><EpisodesList /></Tab.Pane>}
     ]
