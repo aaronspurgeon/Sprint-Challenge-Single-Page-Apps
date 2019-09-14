@@ -9,7 +9,7 @@ export default function EpisodesCard({ episodes }) {
             <Card.Content>
                 <Card.Header>{name}</Card.Header>
                 <Card.Meta>{episode}</Card.Meta>
-                <Card.Description>{air_date}</Card.Description>
+                <Card.Description>{`Air Date: ${air_date}`}</Card.Description>
             </Card.Content>
             <Card.Content extra>
                 <a>
